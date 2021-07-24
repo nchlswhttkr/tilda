@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -euo pipefail
+
+cd "$HOME/tilda"
+
+make terraform-1.0.3
