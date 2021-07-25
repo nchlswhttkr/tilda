@@ -4,3 +4,6 @@ alias tilda='/usr/bin/git --git-dir=$HOME/.tilda/ --work-tree=$HOME'
 # https://www.gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html
 GPG_TTY=$(tty)
 export GPG_TTY
+
+# Custom binaries
+PATH="$PATH:$HOME/bin"
