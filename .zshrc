@@ -5,6 +5,10 @@ alias tilda='/usr/bin/git --git-dir=$HOME/.tilda/ --work-tree=$HOME'
 GPG_TTY=$(tty)
 export GPG_TTY
 
+# Pass https://www.passwordstore.org/
+PASSWORD_STORE_DIR="${HOME}/Google Drive/.password-store"
+export PASSWORD_STORE_DIR
+
 # Custom binaries
 PATH="$PATH:$HOME/bin"
 
