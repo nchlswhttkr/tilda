@@ -9,9 +9,6 @@ export GPG_TTY
 PASSWORD_STORE_DIR="${HOME}/Google Drive/.password-store"
 export PASSWORD_STORE_DIR
 
-# Custom binaries
-PATH="$PATH:$HOME/bin"
-
 # Rust
 [ -s "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
 

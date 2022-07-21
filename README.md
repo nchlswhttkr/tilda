@@ -12,18 +12,14 @@ Inspired by https://news.ycombinator.com/item?id=11071754
 
 
 ```sh
-./tilda/install-terraform.sh "1.0.0"
-./tilda/install-jq.sh "1.6"
-
 brew install \
   cloudflare/cloudflare/cloudflared \
+  hashicorp/tap/terraform \
   ffmpeg \
   hugo \
   imagemagick \
+  jq \
   pass \
   shellcheck \
-  tinygo-org/tools/tinygo \
   youtube-dl
-
-cargo install wrangler
 ```
