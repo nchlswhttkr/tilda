@@ -5,4 +5,8 @@ window:
     decorations: transparent 
     padding:
         x: 8
-        y: 26 
+        y: 26
+font:
+    size: 12
+    normal:
+        family: "Cascadia Code"
