@@ -1,0 +1,10 @@
+[user]
+	name = Nicholas Whittaker
+	email = nicholas@nicholas.cloud
+	signingkey = 1DF5BEB75522C8A8287D449C66CD7DECE10C7E3D
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[core]
+	fsmonitor = true
