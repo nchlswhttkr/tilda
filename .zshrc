@@ -1,3 +1,7 @@
+# Alacritty seems to prefer LC_ALL over LANG, undo this
+export LANG="$LC_ALL"
+unset LC_ALL
+
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -22,3 +26,13 @@ export NVM_DIR="$HOME/.nvm"
 
 # Stop Docker advertising Snyk
 export DOCKER_SCAN_SUGGEST=false
+
+# Hashicorp Vault
+export VAULT_ADDR="https://vault.nicholas.cloud"
+export TF_VAR_vault_address="https://vault.nicholas.cloud"
+
+# Tailscale
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
+# Belles
+alias belles="echo -n '$' && curl --fail --show-error --silent 'https://belles.nicholas.cloud/api/transactions' | jq '[.[] | .metadata.value] | add / 100'"
