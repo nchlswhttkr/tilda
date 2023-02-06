@@ -35,4 +35,4 @@ export TF_VAR_vault_address="https://vault.nicholas.cloud"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 # Belles
-alias belles="echo -n '$' && curl --fail --show-error --silent 'https://belles.nicholas.cloud/api/transactions' | jq '[.[] | .metadata.value] | add / 100'"
+alias belles="curl --fail --show-error --silent 'https://belles.nicholas.cloud/api/transactions' | jq --raw-output '\"\$\" + ([.[] | .metadata.value] | add / 100 | tostring)'"
