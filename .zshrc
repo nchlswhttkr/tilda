@@ -28,7 +28,7 @@ export NVM_DIR="$HOME/.nvm"
 export DOCKER_SCAN_SUGGEST=false
 
 # Hashicorp Vault
-export VAULT_ADDR="http://localhost:8200"
+export VAULT_ADDR="https://vault.nicholas.cloud"
 
 # Tailscale
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
