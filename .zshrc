@@ -32,6 +32,7 @@ export VAULT_ADDR="https://vault.nicholas.cloud"
 
 # Tailscale
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+export TAILSCALE_TAILNET="nchlswhttkr.github"
 
 # Belles
 alias belles="curl --fail --show-error --silent 'https://belles.nicholas.cloud/api/transactions' | jq --raw-output '\"\$\" + ([.[] | .metadata.value] | add / 100 | tostring)'"
