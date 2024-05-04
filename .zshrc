@@ -7,7 +7,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 # https://news.ycombinator.com/item?id=11071754
-alias tilda='/usr/local/bin/git --git-dir=$HOME/.tilda/ --work-tree=$HOME'
+alias tilda='/opt/homebrew/bin/git -c status.showUntrackedFiles=false --git-dir=$HOME/.tilda/ --work-tree=$HOME'
 
 # https://www.gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html
 GPG_TTY=$(tty)
