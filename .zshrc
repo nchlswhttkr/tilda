@@ -39,3 +39,6 @@ alias belles="curl --fail --show-error --silent 'https://belles.nicholas.cloud/a
 
 # Buildkite
 export BUILDKITE_AGENT_CONFIG="$HOME/.buildkite-agent/buildkite-agent.cfg"
+
+# Alacritty
+alias alacritty="/Applications/Alacritty.app/Contents/MacOS/alacritty"

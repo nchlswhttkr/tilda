@@ -1,0 +1,13 @@
+import = [
+  "~/tilda/catppuccin/alacritty/catppuccin-mocha.toml"
+]
+
+[font]
+size = 12
+
+[window]
+decorations = "transparent"
+
+[window.padding]
+x = 8
+y = 24
