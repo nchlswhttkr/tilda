@@ -1,13 +1,19 @@
 import = [
-  "~/tilda/catppuccin/alacritty/catppuccin-mocha.toml"
+  "~/tilda/catppuccin/alacritty/catppuccin-frappe.toml"
 ]
 
 [font]
 size = 12
 
+[keyboard]
+bindings = [
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left",  mods = "Alt", chars = "\u001BB" },
+]
+
 [window]
 decorations = "transparent"
-
-[window.padding]
-x = 8
-y = 24
+dimensions = { columns = 160, lines = 40 }
+opacity = 0.8
+padding = { x = 8, y = 24 }
+position = { x = 200, y = 200 }

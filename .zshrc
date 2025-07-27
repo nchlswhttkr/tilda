@@ -14,15 +14,19 @@ GPG_TTY=$(tty)
 export GPG_TTY
 
 # Pass https://www.passwordstore.org/
-PASSWORD_STORE_DIR="${HOME}/Google Drive/.password-store"
+PASSWORD_STORE_DIR="${HOME}/My Drive/.password-store"
 export PASSWORD_STORE_DIR
 
 # Rust
 [ -s "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
 
+# NPM
+export NPM_CONFIG_FUND="false"
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" "--no-use"
+[ -s "$NVM_DIR/nvm.sh" ] && [ -f "$PWD/.nvmrc" ] && nvm use --silent
 
 # Stop Docker advertising Snyk
 export DOCKER_SCAN_SUGGEST=false
